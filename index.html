@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameen Mujahid - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-color: #cce7ff; /* Blue background */
+        }
+
+        header {
+            background: #003366; /* Deep blue */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px; /* Header size */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-bottom: 1px solid #333; /* Line under sections */
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            font-size: 25px; /* Heading size */
+        }
+
+        h3 {
+            color: #555;
+            font-size: 20px; /* Subheading size */
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px; /* Body size */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #003366; /* Deep blue */
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+            font-size: 16px; /* Body size */
+        }
+
+        input[type="submit"] {
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #555;
+        }
+
+        /* Media queries for mobile responsiveness */
+        @media (max-width: 600px) {
+            nav ul {
+                display: none; /* Hide nav links */
+                flex-direction: column;
+                background: #003366;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            nav ul.active {
+                display: flex; /* Show nav links when active */
+            }
+
+            .hamburger {
+                display: block; /* Show hamburger icon */
+            }
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 300px; /* Adjust this value to reduce the width */
+            height: auto; /* Keeps the aspect ratio */
+            border-radius: 8px;
+        }
+
+        .services-list {
+            text-align: center;
+        }
+
+        .services-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services-list li {
+            margin: 10px 0;
+        }
+
+        .skills-list {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .skills-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Ameen Mujahid</h1>
+        <p>Certified Professional Freelancer: Empowering Success Through Expertise and Innovation</p>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="image-container">
+        <img src="c:\Users\Trendy\Downloads\1725728176615.jpg" alt="Profile">
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Ameen Mujahid, a dedicated freelancer with extensive experience in providing tailored solutions for individuals and businesses. My expertise spans resume writing, SEO, and social media management, helping clients stand out in a competitive landscape.</p>
+        
+        <p>I have collaborated with diverse clients, crafting impactful resumes that highlight achievements and utilizing advanced SEO techniques to enhance online visibility. My social media management skills enable me to develop strategies that foster engagement and brand loyalty.</p>
+        
+        <p>Passionate about continuous learning, I stay updated with industry trends to deliver innovative solutions that meet my clients' evolving needs. Let's connect to explore how I can help you achieve your goals and unlock your full potential.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <h3>Writing & Editing</h3>
+            <ul>
+                <li><strong>Resume Writing:</strong> Crafting tailored resumes that highlight qualifications and achievements.</li>
+                <li><strong>Cover Letter Writing:</strong> Creating persuasive cover letters that capture attention.</li>
+                <li><strong>Copywriting & Content Writing:</strong> Producing engaging content that resonates with target audiences.</li>
+            </ul>
+
+            <h3>Digital Marketing</h3>
+            <ul>
+                <li><strong>SEO:</strong> Implementing strategies to enhance website visibility and improve rankings.</li>
+                <li><strong>Social Media Management:</strong> Developing and executing strategies to grow engagement and brand awareness.</li>
+                <li><strong>Email Marketing:</strong> Designing and managing email campaigns that drive conversions.</li>
+                <li><strong>Paid Ads Management:</strong> Creating and optimizing targeted advertising campaigns.</li>
+            </ul>
+
+            <h3>Design & Development</h3>
+            <ul>
+                <li><strong>Graphic Design:</strong> Creating visually appealing designs for branding and marketing materials.</li>
+                <li><strong>Website Development:</strong> Building user-friendly and responsive websites tailored to client needs.</li>
+                <li><strong>App Development:</strong> Developing custom applications for iOS and Android platforms.</li>
+            </ul>
+
+            <h3>Technical & Administrative</h3>
+            <ul>
+                <li><strong>Virtual Assistance:</strong> Providing administrative support to streamline operations.</li>
+                <li><strong>Market Research:</strong> Conducting thorough research to inform business strategies.</li>
+                <li><strong>Client Relationship Management:</strong> Building strong relationships through effective communication and service.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>I have successfully worked with numerous clients across different freelancing platforms, delivering tailored solutions and earning a reputation for excellence:</p>
+        <ul>
+            <li><strong>Freelancer.com:</strong> High-quality content, SEO, and digital marketing solutions.</li>
+            <li><strong>Upwork:</strong> Long-term clients in resume writing and content creation.</li>
+            <li><strong>Truelancer:</strong> Graphic design and paid advertising services.</li>
+            <li><strong>Fiverr:</strong> 5-star-rated services in resume writing and video editing.</li>
+            <li>Collaborated with Abdelrahman Ali on his website <a href="http://abdelrahmanali.site">AbdelrahmanAli.site</a>, optimizing SEO and enhancing user experience.</li>
+            <li><strong>Kwork:</strong> Designed a professional website for Alixacvare.</li>
+        </ul>
+    </section>
+
+    <section id="services">
+        <h2>Services I Offer</h2>
+        <div class="services-list">
+            <ul>
+                <li><strong>Resume Writing:</strong> Customized resumes that effectively highlight your qualifications. <em>$100</em></li>
+                <li><strong>Cover Letter Writing:</strong> Persuasive cover letters tailored to specific job opportunities. <em>$50</em></li>
+                <li><strong>LinkedIn Profile Optimization:</strong> Enhancing LinkedIn profiles to attract recruiters. <em>$75</em></li>
+                <li><strong>Social Media Management:</strong> Managing and growing social media accounts. <em>$200/month</em></li>
+                <li><strong>SEO:</strong> Optimizing websites for better visibility on search engines. <em>$150</em></li>
+                <li><strong>Paid Ads Management:</strong> Targeted ads for Google and Facebook to boost ROI. <em>$250/month</em></li>
+                <li><strong>Copywriting & Content Writing:</strong> High-quality content and copy for your brand. <em>$0.10/word</em></li>
+                <li><strong>Graphic Design:</strong> Logos, branding, and social media graphics. <em>$300</em></li>
+                <li><strong>Website Development:</strong> Developing user-friendly, responsive websites. <em>$800</em></li>
+                <li><strong>App Development:</strong> Custom iOS/Android app development. <em>$2000</em></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <form action="mailto:ameenmujahid61@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Your Phone Number" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ameen Mujahid - Certified Professional Freelancer</p>
+    </footer>
+</body>
+</html>
